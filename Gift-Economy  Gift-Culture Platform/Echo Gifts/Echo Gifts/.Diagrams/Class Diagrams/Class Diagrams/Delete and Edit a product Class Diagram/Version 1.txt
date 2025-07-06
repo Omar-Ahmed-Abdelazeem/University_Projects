@@ -1,0 +1,32 @@
+@startuml
+
+class User {
+  - UserId: String
+  - username: String
+  + editProduct(productId: String, newDetails: Map<String, String>): void
+  + deleteProduct(productId: String): void
+}
+
+class Product {
+  - productId: String
+  - title: String
+  - category: String
+  - adStatus: String  # e.g., ACTIVE, INACTIVE
+  + updateStatus(newStatus: String): void
+  + updatePrice(newPrice: Double): void
+}
+
+class Dashboard {
+  - totalAds: Integer
+  - featuredAds: Integer
+  - messages: Integer
+  + viewProducts(): List<Product>
+  + filterByCategory(category: String): List<Product>
+}
+
+' Relationships
+User --> Product : manages
+Dashboard "1" -- "0..*" Product : displays
+User --> Dashboard : interacts
+
+@enduml

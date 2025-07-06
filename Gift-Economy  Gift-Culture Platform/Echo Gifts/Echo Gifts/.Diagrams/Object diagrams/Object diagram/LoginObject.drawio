@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.2">
+  <diagram name="Page-1" id="Z9kKV58nCYaNHzL4aYzV">
+    <mxGraphModel dx="1281" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="llu2r5BBuBF2TRoaETFV-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Login object diagram&lt;/font&gt;" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="20" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;preocondition&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="60" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-13" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="415" y="390" as="sourcePoint" />
+            <mxPoint x="545" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-18" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="644" y="390" as="sourcePoint" />
+            <mxPoint x="545" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-29" value="Logs In" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="550" y="308" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-30" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Echo gifts management system&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="200" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-31" value="User type=&quot;&quot;&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;Name=&quot;&quot;&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;Password=&quot;&quot;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="llu2r5BBuBF2TRoaETFV-30">
+          <mxGeometry y="26" width="200" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-35" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;U1:User&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="390" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-36" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;email= ahmed@example.com&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;Password: *******&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;isLoggedin= false&lt;/span&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="llu2r5BBuBF2TRoaETFV-35">
+          <mxGeometry y="26" width="210" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-40" value=":&lt;font style=&quot;font-size: 14px;&quot;&gt;admin&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="390" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-41" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;Name= &quot;&quot;&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;Password=&quot;&quot;&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;isLoggedin= false&lt;/span&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="llu2r5BBuBF2TRoaETFV-40">
+          <mxGeometry y="26" width="140" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-44" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="1">
+          <mxGeometry x="60" y="570" width="1080" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-45" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Postcondition&lt;/font&gt;" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="580" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-46" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="415" y="890" as="sourcePoint" />
+            <mxPoint x="545" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-47" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="644" y="890" as="sourcePoint" />
+            <mxPoint x="545" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-48" value="Logs In" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="550" y="808" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-49" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Echo gifts management system&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="700" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-50" value="User type=&quot;user&quot;&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;Name=&quot;Ahmed ali&quot;&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;Password=&quot;******&quot;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;id= 2&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="llu2r5BBuBF2TRoaETFV-49">
+          <mxGeometry y="26" width="200" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-51" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;U1:User&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="890" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-52" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;email= ahmed@example.com&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;Password: *******&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;isLoggedin= true&lt;/span&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="llu2r5BBuBF2TRoaETFV-51">
+          <mxGeometry y="26" width="210" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-53" value=":&lt;font style=&quot;font-size: 14px;&quot;&gt;admin&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="890" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="llu2r5BBuBF2TRoaETFV-54" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;Name= &quot;&quot;&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;Password=&quot;&quot;&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;isLoggedin= false&lt;/span&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="llu2r5BBuBF2TRoaETFV-53">
+          <mxGeometry y="26" width="140" height="94" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

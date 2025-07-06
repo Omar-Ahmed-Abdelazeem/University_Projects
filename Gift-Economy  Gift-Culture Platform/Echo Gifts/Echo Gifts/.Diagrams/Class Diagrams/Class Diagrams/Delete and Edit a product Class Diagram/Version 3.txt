@@ -1,0 +1,76 @@
+@startuml
+title Final Version 
+' ***********************
+' Interfaces
+' ***********************
+interface AdStatus {
+  <<interface>>
+  + handleStatus(): void
+}
+
+' ***********************
+' Classes
+' ***********************
+class Product {
+  - productId: String
+  - title: String
+  - details: String
+  + getCategory(): Category
+}
+
+class Category {
+  - categoryId: String
+  - name: String
+  + getSubcategories(): List<Category>
+}
+
+
+
+class Customer {
+  - customerId: String
+  - name: String
+  + getProducts(): List<Product>
+}
+
+class ActiveStatus implements AdStatus {
+  + handleStatus(): void
+}
+
+class InactiveStatus implements AdStatus {
+  + handleStatus(): void
+}
+
+class ProductManagement {
+  - approvalDate: Date
+  - isApproved: Boolean
+}
+
+class Dashboard {
+- totalAds: Integer
+- featuredAds: Integer
+- messages: Integer
++ viewProducts(): List<Product> 
++ filterByCategory(category: String): List<Product> 
+}
+
+' ***********************
+' Relationships
+' ***********************
+Customer "1" *-- "0..*" Product : owns
+Customer "1" o-- "0..*" ProductManagement
+Product "1" o-- "0..*" ProductManagement
+
+Category "1" -- "0..*" Product : categorizes
+Category "0..*" -- "0..1" Category : subcategory
+
+Product o-- AdStatus : status
+
+Dashboard "1" --> "0..*" Product : aggregates
+
+' ***********************
+' Multiplicities & Roles
+' ***********************
+Customer "1" -> "0..*" Product : manages
+Product "1" -> "1" Category : belongs to
+
+@enduml

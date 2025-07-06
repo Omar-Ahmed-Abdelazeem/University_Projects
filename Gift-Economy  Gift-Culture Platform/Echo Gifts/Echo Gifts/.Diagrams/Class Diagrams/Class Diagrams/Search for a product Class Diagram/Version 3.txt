@@ -1,0 +1,94 @@
+@startuml
+
+' ***********************
+' Interfaces
+' ***********************
+interface SearchStrategy {
+  + applyFilters(products: List<Product>): List<Product>
+}
+
+interface Displayable {
+  + displayDetails(): String
+}
+
+' ***********************
+' Classes
+' ***********************
+class User {
+  - userId: String
+  + searchProducts(strategy: SearchStrategy): List<Product>
+}
+
+class Product implements Displayable {
+  - productId: String
+  - title: String
+  - location: County
+  + displayDetails(): String
+}
+
+class Category {
+  - categoryId: String
+  - name: String
+  + getSubcategories(): List<Category>
+}
+
+class Country {
+  - countryId: String
+  - name: String
+  + getCounties(): List<County>
+}
+
+class County {
+  - countyId: String
+  - name: String
+}
+
+' ***********************
+' Design Patterns
+' ***********************
+class CategoryFilter implements SearchStrategy {
+  - selectedCategory: Category
+  + applyFilters(products: List<Product>): List<Product>
+}
+
+class LocationFilter implements SearchStrategy {
+  - selectedCountry: Country
+  - selectedCity: City
+  - selectedArea : Area
+  + applyFilters(products: List<Product>): List<Product>
+}
+
+' ***********************
+' Advanced Relationships
+' ***********************
+' Composition (Country contains Counties)
+Country "1" *-- "1..*" County : contains
+
+' Recursive Association (Category Subcategories)
+Category "0..1" --> "0..*" Category : subcategory
+
+' Qualified Association (County qualified by Country)
+Product "1" --> "1" County : located in
+
+' Aggregation (SearchStrategy aggregates Products)
+SearchStrategy "1" ..> "0..*" Product : filters
+
+' Association Class (SearchSession)
+class SearchSession {
+  - sessionId: String
+  - timestamp: DateTime
+}
+User "1" --> "0..*" SearchSession : initiates
+SearchSession "1" --> "1" SearchStrategy : uses
+
+' Polymorphism (Search Strategies)
+SearchStrategy <|-- CategoryFilter
+SearchStrategy <|-- LocationFilter
+
+' ***********************
+' Multiplicities & Roles
+' ***********************
+User "1" --> "0..*" Product : views
+Product "1" --> "1" Category : belongs to > categorized under
+
+@enduml

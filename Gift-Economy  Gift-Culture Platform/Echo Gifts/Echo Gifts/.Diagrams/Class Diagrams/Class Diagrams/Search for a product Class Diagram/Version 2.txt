@@ -1,0 +1,58 @@
+@startuml
+
+class User {
+  - userId: String
+  + searchProducts(filter: SearchFilter): List<Product>
+}
+
+class SearchFilter {
+  - selectedCategory: Category
+  - selectedCounty: County
+  - selectedCity : City
+  - selectedArea : Area
+  - keywords: String
+  + applyFilters(): List<Product>
+}
+
+class Product {
+  - productId: String
+  - title: String
+  - description: String
+  + getDetails(): String
+}
+
+class Category {
+ - categoryId: String
+  - name: String
+  + getSubcategories(): List<Category>
+}
+
+class Country {
+  - countryId: String
+  - name: String
+  + getCounties(): List<County>
+}
+
+class County {
+  - countyId: String
+  - name: String
+}
+
+' Relationships
+User --> SearchFilter : uses
+SearchFilter --> Category : "filter by category"
+SearchFilter --> Country : "filter by country"
+SearchFilter --> County : "filter by county"
+Product --> Category : "belongs to"
+Product --> County : "located in"
+Country "1" *-- "0..*" County : contains
+Category "0..1" --> "0..*" Category : subcategory
+
+' Multiplicities
+User "1" --> "1" SearchFilter : initiates
+SearchFilter "1" --> "0..*" Product : retrieves
+Product "1" --> "1" Category : belongs to
+Product "1" --> "1" County : located in
+Country "1" --> "1..*" County : manages
+
+@enduml

@@ -1,0 +1,39 @@
+@startuml
+
+class User {
+  - userId: String  
+  - username: String  
+  - email: String  
+  + editProfile(newUsername: String, newEmail: String): Boolean  
+}
+
+class Dashboard {
+  - totalAds: Integer  
+  - featuredAds: Integer  
+  - messages: Integer  
+  + viewProducts(): List<Product>  
+  + filterByCategory(category: Category): List<Product>  
+}
+
+class Product {
+  - productId: String  
+  - title: String  
+  - adStatus: String  # e.g., ACTIVE, INACTIVE  
+  - price: Double  
+  - adId: String  
+  + editProduct(newTitle: String, newPrice: Double, newStatus: String): Boolean  
+}
+
+class Category {
+  - categoryId: String  
+  - name: String  # e.g., "Electronics", "Furniture"  
+  + getProducts(): List<Product>  
+}
+
+' Relationships  
+User --> Dashboard : interacts with  
+Dashboard "1" --> "0..*" Product : displays  
+Product "1" --> "1" Category : belongs to  
+Dashboard --> Category : filters by  
+
+@enduml

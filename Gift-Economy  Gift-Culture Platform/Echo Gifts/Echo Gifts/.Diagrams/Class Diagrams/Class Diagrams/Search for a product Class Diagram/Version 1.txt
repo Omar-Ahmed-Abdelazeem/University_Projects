@@ -1,0 +1,33 @@
+@startuml
+
+class User {
+  - userId: String
+  + searchProducts(filter: Filters): List<Product>
+}
+
+class Filters {
+  - selectedCategory: Category
+  - keywords: String
+  + applyFilters(): List<Product>
+}
+
+class Product {
+  - productId: String
+  - title: String
+  - description: String
+  - location: String
+}
+
+class Category {
+  - name: String
+  + getSubcategories(): List<Category>
+}
+
+' Relationships
+User --> Filters : uses
+Filters --> Category : selects
+Filters --> Product : returns
+Category "0..1" --> "0..*" Category : subcategory
+Product "1" --> "1" Category : belongs to
+
+@enduml
