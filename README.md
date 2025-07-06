@@ -2,14 +2,14 @@
 
 This repository includes two university-level software engineering projects:
 
-1. **Event Management System** – Java (Swing), desktop application  
+1. **Event Management System** – Java (Swing), Netbeans
 2. **Gift-Economy / Gift-Culture Platform** – PHP & MySQL web application using XAMPP
 
 ---
 
 ## 🧩 Project 1: Event Management System 🎉
 
-A desktop application built in Java (Swing) for managing events.  
+A Project in Java (Swing) for managing events.  
 This project was developed as a university assignment by a team of 6 students in the 2nd year.
 
 ### 💡 Features
