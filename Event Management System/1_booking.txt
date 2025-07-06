@@ -1,0 +1,7 @@
+name:name:h
+date:date:h
+place:place:h
+numberOfMeals:1
+numberOfPeople:50
+numberOfHours:1
+1
