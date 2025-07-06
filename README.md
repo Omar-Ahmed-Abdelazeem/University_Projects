@@ -35,7 +35,7 @@ This project promotes a money-free exchange of goods and services in local commu
 
 - User registration and login  
 - Product listing   
-- Item reservations and notifications  
+- Request & Reservation System  
 - Admin dashboard with user/item management
 
 ### 🛠️ Technologies Used
