@@ -1,5 +1,5 @@
 # University Projects 📚
-
+---
 This repository includes two university-level software engineering projects:
 
 1. **Event Management System** – Java (Swing), Netbeans
