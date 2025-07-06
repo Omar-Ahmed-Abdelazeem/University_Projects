@@ -21,7 +21,28 @@ This project was developed as a university assignment by a team of 6 students in
 
 ### 🛠️ Technologies Used
 
+- NetBeans IDE
 - Java (Swing GUI)
 - Object-Oriented Programming (OOP)
 - Git for version control
-- NetBeans IDE
+
+## 🧩 Project 2: Gift-Economy / Gift-Culture Platform 🎁
+
+A web-based donation and sharing platform inspired by the BuyNothingProject.  
+This project promotes a money-free exchange of goods and services in local communities.
+
+### 💡 Features
+
+- User registration and login  
+- Product listing   
+- Item reservations and notifications  
+- Admin dashboard with user/item management
+
+### 🛠️ Technologies Used
+
+- VS Code
+- PHP  
+- MySQL  
+- HTML, CSS, Bootstrap  
+- XAMPP (Apache + MySQL)  
+- Git for version control
